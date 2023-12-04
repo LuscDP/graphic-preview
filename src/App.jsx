@@ -1,13 +1,12 @@
 // import React from 'react';
 import './App.css';
+import Main from './components/Main';
 
 const App =()=> {
 
-
   return (
     <div className="App">
-      <h1>Proyecto Fisica</h1>
-      <h2>Estatica de la particula</h2>
+      <Main></Main>
     </div>
   );
 }
