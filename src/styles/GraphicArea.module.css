@@ -1,4 +1,14 @@
+/* import colors */
+@import './colors.css';
 .main {
-  background-color: #03301f;
-  color: #effef7;
+  background-color: var(--white);
+  color: var(--dark);
+  position: relative;
+}
+.box {
+  background-color: var(--dark);
+  color: var(--white);
+  width: 100px;
+  height: 100px;
+  position: absolute;
 }

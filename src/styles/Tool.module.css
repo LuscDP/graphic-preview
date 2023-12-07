@@ -1,4 +1,21 @@
+@import './colors.css';
+
 .main {
-  background-color: #effef7;
-  color: #03301f;
+  background-color: var(--dark);
+  color: var(--white);
+  display: flex;
+  padding: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: .5rem;
+  border: solid 1px var(--white);
+  margin: .5rem;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
 }
+.main:hover {
+  background-color: var(--white);
+  color: var(--dark);
+}
+/* range input change color to match theme */

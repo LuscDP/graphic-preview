@@ -4,10 +4,10 @@ import styles from "../styles/Tool.module.css";
 
 const Tool = ({ name, children }) => {
   return (
-    <div className={styles.main}>
+    <a className={styles.main}>
       <div className={styles.name}>{name}</div>
       <div className={styles.icon}>{children}</div>
-    </div>
+    </a>
   );
 };
 
