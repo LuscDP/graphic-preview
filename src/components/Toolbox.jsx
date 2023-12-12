@@ -31,7 +31,7 @@ const Toolbox = () => {
         <input type="range" min="0" max="100" />
         <p>50kg</p>
       </Tool> */}
-      <Tool name="#1: ">
+      <Tool name="#1">
         <div className={styles.PBrangesliderdiv}>
           <input
             type="range"

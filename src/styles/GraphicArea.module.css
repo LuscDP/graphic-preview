@@ -1,14 +1,49 @@
 /* import colors */
-@import './colors.css';
+@import "./colors.css";
 .main {
-  background-color: var(--white);
-  color: var(--dark);
+  background-color: var(--dark);
+  color: var(--white);
   position: relative;
 }
 .box {
-  background-color: var(--dark);
-  color: var(--white);
-  width: 100px;
-  height: 100px;
+  background-color: var(--white);
+  color: var(--dark);
+  width: 150px;
+  height: 60px;
   position: absolute;
+  top: 130px;
+  left: 200px;
+}
+
+.box2 {
+  background-color: var(--white);
+  color: var(--dark);
+  width: 60px;
+  height: 150px;
+  position: absolute;
+  top: 300px;
+  left: 450px;
+}
+
+/* polea */
+.box3 {
+  background-color: var(--white);
+  color: var(--dark);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 145px;
+  left: 460px;
+  border-radius: 50%;
+}
+
+.box4 {
+  width: 300px;
+  height: 300px;
+  background-color: var(--dark);
+  opacity: 0.5;
+  border: 1px solid var(--white);
+  position: absolute;
+  top: 190px; 
+  left: 130px;
 }
