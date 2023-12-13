@@ -1,9 +1,0 @@
-@import url('./colors.css');
-
-.main {
-  /* cover full height size */
-  height: 100vh;
-  background-color: var(--graphicArea-bg-color);
-  /* make elements inside this component, be wherever they want */
-  position: relative;  
-}

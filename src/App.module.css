@@ -23,7 +23,7 @@
 /* base */
 .base {
   height: 250px;
-  width: 450px;
+  width: 650px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -39,6 +39,11 @@
   position: absolute;
   border: solid 1px var(--caja1-border-color);
   background-color: var(--caja1-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* column */
+  flex-direction: column;
 }
 
 /* caja2 */
@@ -48,6 +53,11 @@
   position: absolute;
   border: solid 1px var(--caja2-border-color);
   background-color: var(--caja2-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* column */
+  flex-direction: column;
 }
 
 /* polea */
@@ -139,7 +149,7 @@
   align-items: center;
   margin-top: 0.5rem;
   /* line at bottom */
-  border-bottom: solid 1px var(--result-border-color);
+  /* border-bottom: solid 1px var(--result-border-color); */
 }
 .results .result h5 {
   font-weight: 600;

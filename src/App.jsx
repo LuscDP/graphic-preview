@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./App.module.css";
 import { IoAddCircleOutline, IoTrashBinOutline } from "react-icons/io5";
-import { IoIosCloseCircleOutline } from "react-icons/io";
-import { MdOutlineDeleteSweep } from "react-icons/md";
 import { GrPowerReset } from "react-icons/gr";
 
 const App = () => {
@@ -102,7 +100,7 @@ const App = () => {
     const poleaElement = document.getElementById("polea");
 
     caja1Element.style.bottom = `${base.height}px`;
-    caja1Element.style.left = `${base.width / 2 - caja1.width / 2}px`;
+    caja1Element.style.left = `${base.width / 2 + caja1.width / 2 }px`;
 
     caja2Element.style.bottom = `${base.height / 3}px`;
     caja2Element.style.left = `${base.width + 5}px`;
@@ -137,6 +135,18 @@ const App = () => {
 
     return () => {};
   }, [caja1masa, caja2masa, miu, gravedad]);
+
+  // hacer cambios en interfaz segun los resultados
+  useEffect(() => {
+    const caja1Element = document.getElementById("caja1");
+    const caja2Element = document.getElementById("caja2");
+    const cuerda1Element = document.getElementById("cuerda1");
+    const cuerda2Element = document.getElementById("cuerda2");
+    const poleaElement = document.getElementById("polea");
+
+
+
+  }, [caja1masa, caja1]);
 
   return (
     <div className={styles.App}>
