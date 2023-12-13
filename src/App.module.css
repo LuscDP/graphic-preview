@@ -1,0 +1,154 @@
+/* import colors */
+@import url("./styles/colors.css");
+
+.App {
+  /* max width and height */
+  width: 100vw;
+  height: 100vh;
+}
+.hpmain {
+  /* cover full window size */
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+}
+
+/* area grafica */
+.main {
+  /* cover full window size */
+  height: 100vh;
+  background-color: var(--graphicArea-bg-color);
+}
+/* base */
+.base {
+  height: 250px;
+  width: 450px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: solid 1px var(--base-border-color);
+  background-color: var(--base-bg-color);
+  border-radius: 0 10px 0 0;
+}
+
+/* caja1 */
+.caja1 {
+  height: 75px;
+  width: 120px;
+  position: absolute;
+  border: solid 1px var(--caja1-border-color);
+  background-color: var(--caja1-bg-color);
+}
+
+/* caja2 */
+.caja2 {
+  height: 120px;
+  width: 75px;
+  position: absolute;
+  border: solid 1px var(--caja2-border-color);
+  background-color: var(--caja2-bg-color);
+}
+
+/* polea */
+.polea {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border: solid 1px var(--polea-border-color);
+  background-color: var(--polea-bg-color);
+  border-radius: 50%;
+}
+
+/* toolbox */
+.toolbox {
+  /* cover full window size */
+  height: 100vh;
+  background-color: var(--toolbox-bg-color);
+}
+
+.toolbox div {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.toolbox h5 {
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-top: .3rem;
+}
+.toolbox input {
+  height: 40px;
+  width: 150px;
+  border: solid 1px var(--masa1-border-color);
+  color: var(--masa1-text-color);
+  font-weight: 500;
+  padding: 0 0 0 1rem;
+  border-radius: 10px 0 0 10px;
+}
+/* hide buttons up and down */
+.toolbox input[type="number"]::-webkit-inner-spin-button,
+.toolbox input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* on focus  */
+.toolbox input:focus {
+  border: solid 2px var(--masa1-border-color);
+  outline: none;
+}
+.toolbox button {
+  height: 40px;
+  width: 40px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toolbox button.buttonAdd {
+  cursor: pointer;
+  background-color: var(--buttonAdd-bg-color);
+  color: var(--buttonAdd-text-color);
+  border: none;
+}
+.toolbox button.buttonDel {
+  cursor: pointer;
+  background-color: var(--buttonRemove-bg-color);
+  color: var(--buttonRemove-text-color);
+  border: none;
+  border-radius: 0 10px 10px 0;
+}
+.toolbox button .icon {
+  font-size: 1.2rem;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.results h3 {
+  text-align: left;
+  width: 100%;
+}
+.results .result {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 0.5rem;
+  /* line at bottom */
+  border-bottom: solid 1px var(--result-border-color);
+}
+.results .result h5 {
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-top: .3rem;
+}
+.results .result p {
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-top: .3rem;
+  margin-left: .5rem;
+}

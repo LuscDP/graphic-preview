@@ -3,3 +3,10 @@
   height: 100vh;
   width: 100vw;
 }
+
+#hp-main {
+  /* create two columns, toolbox, right, being smaller than graphicArea, left */
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-template-rows: 1fr;
+}

@@ -1,8 +1,26 @@
 /* export colors */
 
 :root {
-  --white: #F2F2F2;
-  --dark: #00030D;
-  /* --dark:  */
-  --third: #8C0F77;
+  --graphicArea-bg-color: #f2f2f2;
+  --caja1-bg-color: #8C0F77;
+  --caja1-border-color: #8C0F77;
+  --caja2-bg-color: #F2A365;
+  --caja2-border-color: #F2A365;
+  --polea-bg-color: #0F4C75;
+  --polea-border-color: #0F4C75;
+  --base-bg-color: #00030D;
+  --base-border-color: #00030D;
+
+  --toolbox-bg-color: #f2f2f2;
+  --masa1-bg-color: #8C0F77;
+  --masa1-border-color: #8C0F77;
+  --masa1-text-color: #00030D;
+
+  --buttonAdd-bg-color: #0F4C75;
+  --buttonAdd-text-color: #fff;
+
+  --buttonRemove-bg-color: #F2A365;
+  --buttonRemove-text-color: #fff;
+
+  --result-border-color: #00030D;
 }
